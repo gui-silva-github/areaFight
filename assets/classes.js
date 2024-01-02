@@ -27,7 +27,7 @@ class Knight extends Character{
         this.attack = 10;
         this.defense = 8;
         this.maxLife = this.life;
-        this.src = 'imagens/cavaleiro.jpg';
+        this.src = 'assets/imagens/cavaleiro.jpg';
     }
 
 }
@@ -40,7 +40,7 @@ class Sorcerer extends Character{
         this.attack = 15;
         this.defense = 3;
         this.maxLife = this.life;
-        this.src = 'imagens/bruxo.png';
+        this.src = 'assets/imagens/bruxo.png';
     }
 
 }
@@ -53,7 +53,7 @@ class LittleMonster extends Character{
         this.attack = 4;
         this.defense = 3;
         this.maxLife = this.life;
-        this.src = 'imagens/onca.jpg';
+        this.src = 'assets/imagens/onca.jpg';
     }
 
 }
@@ -66,7 +66,7 @@ class BigMonster extends Character{
         this.attack = 16;
         this.defense = 6;
         this.maxLife = this.life;
-        this.src = 'imagens/godzilla.jpeg';
+        this.src = 'assets/imagens/godzilla.jpeg';
     }
 
 }
