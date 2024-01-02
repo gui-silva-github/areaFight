@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: #333 url(../assets/imagens/fundo.png);
+    height: 100vh;
+    background-position: center;
+}
+
+#container{
+    margin: 0 auto;
+   background: gray;
+   border-radius: 50px;
+   height: 300px;
+}
+
+#fight #musica{
+    margin: 15px;
+}
+
+#musica{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+h1{
+    margin-top: 200px;
+    text-shadow: 4px 4px 4px black;
+    color: blue;
+    font-size: 6em;
+    text-align: center;
+}
+
+#area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+a{
+    text-shadow: 4px 4px 4px black;
+    color: white;
+    font-size: 5em;
+}
+
+a:hover{
+    background: url(imagens/fundo.png) bottom center;
+}
+
+.fightArea{
+    box-shadow: 2px 2px 2px white;
+    display: flex;
+    gap: 20px;
+    background: url(imagens/background.jpeg);
+}
+
+#char, #monster{
+    text-align: center;
+    flex: 1;
+}
+
+.lifeBar{
+    height: 30px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: white;
+}
+
+.lifeBar .bar{
+    height: inherit;
+    background-color: red;
+    border-radius: 5px;
+}
+
+#img{
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 2px 2px 2px black;
+    width: 300px;
+    height: 200px;
+}
+
+.name{
+    text-shadow: 4px 4px 4px black;
+    color: white;
+    display: block;
+    font-size: 45px;
+}
+
+.log{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    text-align: center;
+    background: rgba(0, 17, 255, 0.731);
+    box-shadow: 2px 2px 2px white;
+    border: 15px solid white;
+    height: 225px;
+    overflow-y: scroll;
+}
+
+.log li{
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    word-spacing: 8px;
+    font-size: 60px;
+}
+
+button{
+    color: white;
+    background: red;
+    border: 4px solid white;
+    font-size: 2em;
+    padding: 10px;
+    width: 50%;
+    margin: 10px;
+}
+
+@media (width < 1000px){
+    body{
+        background: url(imagens/background.jpeg);
+    }
+    h1{
+        font-size: 5em;
+    }
+    a{ 
+        font-size: 4em;
+    }
+    #char, #monster{
+        flex: 1;
+    }
+    .lifeBar{
+        height: 10px;
+    }
+    #img{
+       width: 150px;
+       height: 150px; 
+    }
+    .name{
+        font-size: 30px;
+    }
+    button{
+        width: 65%;
+    }
+    .log{
+        height: 150px;
+    }
+    .log li{
+        font-size: 30px;
+    }
+}
